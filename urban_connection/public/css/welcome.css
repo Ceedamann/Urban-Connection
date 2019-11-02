@@ -6,7 +6,6 @@ html, body {
     margin: 0;
     color: white;
     background-color: black;
-    /* background-image: url("http://urbanbarbershoplocator.com/wp-content/uploads/2015/06/ublvid1.mp4") */
 }
 .full-height {
     height: 100vh;
@@ -57,13 +56,11 @@ html, body {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    /* background: rgba(0, 0, 0, 0.9); */
+    background: rgb(0, 0, 0);
 }
 
 /* Add some content at the bottom of the video/page */
 .content {
-    /* position: fixed; */
-    /* bottom: 0; */
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
@@ -82,7 +79,9 @@ html, body {
     cursor: pointer;
 }
 
-#myBtn:hover {
+.btn-link:hover {
     background: #ddd;
     color: black;
+    border-radius: 5px;
+    text-decoration: none;
 }
