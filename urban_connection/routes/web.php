@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/about', 'PagesController@about');
 Route::get('/events', 'PagesController@events');
 Route::get('/markets', 'PagesController@markets');
-Route::get('/businesses', 'PagesController@businesses');
+Route::get('/business', 'PagesController@business');
 
 Auth::routes();
 
