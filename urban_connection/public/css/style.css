@@ -7,9 +7,10 @@ html, body {
     text-align: center;
     background-position: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)), url('http://www.wvstrawberryfestival.com/images/Downtown2.JPG');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)), url('https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ');
 
-.card-body {
+.container{
+    margin auto 0;
     background-color: black;
     color: white;
 }
