@@ -1,0 +1,16 @@
+html, body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)), url('http://www.wvstrawberryfestival.com/images/Downtown2.JPG');
+
+.card-body {
+    background-color: black;
+    color: white;
+}
+
