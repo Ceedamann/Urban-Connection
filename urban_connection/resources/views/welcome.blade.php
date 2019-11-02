@@ -40,10 +40,10 @@
                 </div>
 
                 <div class="links">
-                    <a class='btn-link' href="">Markets</a>
-                    <a class='btn-link' href="">Barbor Shops</a>
-                    <a class='btn-link' href="">Events</a>
-                    <a class='btn-link' href="">Businesses</a>
+                    <a class='btn-link' href="/about">About us</a>
+                    <a class='btn-link' href="/business">Barbor Shops</a>
+                    <a class='btn-link' href="/events">Events</a>
+                    <a class='btn-link' href="/business">Businesses</a>
                 </div>
             </div>
         </div>
