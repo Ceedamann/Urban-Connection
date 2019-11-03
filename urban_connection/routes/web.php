@@ -23,4 +23,4 @@ Route::get('/business', 'PagesController@business');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::resource("categories",'CategoriesController');
