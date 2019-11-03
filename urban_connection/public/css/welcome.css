@@ -9,6 +9,8 @@ html, body {
 }
 .full-height {
     height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+
 }
 
 .flex-center {
@@ -32,17 +34,35 @@ html, body {
 }
 
 .title {
-    font-size: 84px;
+    font-size: 120px;
+    position: relative;
+    animation-name: title;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title {
+    0% {left: -1000px;}
+    100% {left: 0;}
 }
 
 .links > a {
     color: white;
     padding: 0 25px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+    animation-name: links;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes links {
+    0% {left: 1000px;}
+    100% {left: 0;}
 }
 
 .m-b-md {
@@ -68,20 +88,11 @@ html, body {
     text-align: center;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
 .btn-link:hover {
     background: #ddd;
     color: black;
     border-radius: 5px;
     text-decoration: none;
+    transition-property: transform;
+
 }
