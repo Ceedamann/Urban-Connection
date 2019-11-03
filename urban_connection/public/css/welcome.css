@@ -30,6 +30,16 @@ html, body {
 
 .title {
     font-size: 120px;
+    position: relative;
+    animation-name: title;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title {
+    0% {left: -1000px;}
+    100% {left: 0;}
+
 }
 
 .links > a {
@@ -40,6 +50,15 @@ html, body {
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
+    animation-name: links;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes links {
+    0% {left: 1000px;}
+    100% {left: 0;}
 }
 
 .m-b-md {
@@ -65,22 +84,11 @@ html, body {
     text-align: center;
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    transform: rotateY(180);
-}
-
 .btn-link:hover {
     background: #e91e63;
     color: #fff;
     border-color: #e91e63;
     text-decoration: none;
-    transition: .5s;
+    transition-property: transform;
+
 }
