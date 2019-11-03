@@ -86,7 +86,7 @@
                 <div class="col-md-4 mt-5">
                     <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="">Posts</a>
+                                <a href="{{route('posts.index')}}">Posts</a>
         
                             </li>
                             <li class="list-group-item">
@@ -94,7 +94,11 @@
         
                             </li>
                     </ul>
-        
+                    <ul class="list-group mt-5">                          
+                            <li class="list-group-item">
+                                <a href="{{route('trashed-posts.index')}}">Trashed posts</a>        
+                            </li>                        
+                    </ul>
                  </div>
                 <div class="col-md-8 mt-5">
         
