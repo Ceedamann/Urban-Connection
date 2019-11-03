@@ -38,7 +38,6 @@
 @stop
 @section("scripts")
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.js"></script>
-<!-- <script>tinymce.init({selector:'textarea'});</script> -->
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
 flatpickr('#published_at',{enableTime: true,}) 
