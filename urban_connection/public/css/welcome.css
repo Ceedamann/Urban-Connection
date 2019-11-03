@@ -9,6 +9,7 @@ html, body {
 }
 .full-height {
     height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .flex-center {
@@ -27,18 +28,14 @@ html, body {
     top: 18px;
 }
 
-.content {
-
-}
-
 .title {
-    font-size: 84px;
+    font-size: 120px;
 }
 
 .links > a {
     color: white;
     padding: 0 25px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: .1rem;
     text-decoration: none;
@@ -77,11 +74,13 @@ html, body {
     background: #000;
     color: #fff;
     cursor: pointer;
+    transform: rotateY(180);
 }
 
 .btn-link:hover {
-    background: #ddd;
-    color: black;
-    border-radius: 5px;
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
     text-decoration: none;
+    transition: .5s;
 }
