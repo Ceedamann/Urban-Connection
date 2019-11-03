@@ -10,7 +10,6 @@ html, body {
 .full-height {
     height: 100vh;
     background: rgba(0, 0, 0, 0.5);
-
 }
 
 .flex-center {
@@ -29,10 +28,6 @@ html, body {
     top: 18px;
 }
 
-.content {
-
-}
-
 .title {
     font-size: 120px;
     position: relative;
@@ -44,6 +39,7 @@ html, body {
 @keyframes title {
     0% {left: -1000px;}
     100% {left: 0;}
+
 }
 
 .links > a {
@@ -89,9 +85,9 @@ html, body {
 }
 
 .btn-link:hover {
-    background: #ddd;
-    color: black;
-    border-radius: 5px;
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
     text-decoration: none;
     transition-property: transform;
 
