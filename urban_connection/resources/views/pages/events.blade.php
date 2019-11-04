@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,15 @@
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
     <title>Events</title>
 </head>
-<body>
+<body> --}}
+    @extends('layouts.app');
+    @push('styles')
+        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    @endpush
+    @include('inc.navbar');
+    @push('styles')
+        <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+    @endpush
     <section>
         <div class="leftBox">
             <div class="content">
