@@ -75,6 +75,24 @@
                             @endforeach
                         </select>
                     </div>
+                    <div class="form-group">                    
+                            @if($tags->count()>0)
+                            <label for="tags">Tags</label>
+                            <select name="tags[]" id="tags" class="form-control tags-selector" multiple>
+                            @foreach($tags as $tag)
+                            <option value="{{$tag->id}}"
+                            @if(isset($post))
+                                @if($post->hasTag($tag->id))
+                                    selected
+                                @endif
+                            @endif
+                            >                        
+                            {{$tag->name}}
+                            </option>
+                            @endforeach
+                            </select>
+                            @endif                        
+                    </div>
                     <div class="form-group">
                         <button type='submit' class="btn btn-success">{{isset($post)?"Update Post":"Create Post"}}</button>
                     </div>
@@ -86,14 +104,19 @@
 
 @stop
 @section("scripts")
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
 flatpickr('#published_at',{enableTime: true,})
+$(document).ready(function() {
+    $('.tags-selector').select2();
+});
 </script>
 
 @stop
 @section('css')
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/dark.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.css">
 
