@@ -1,14 +1,15 @@
 @extends('layouts.app')
 @push('styles')
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/about.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
+
+<div class="container">
   <div class="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-5 avatar">
 
-    <span class="bounce_Img"><img src="https://avatars0.githubusercontent.com/u/51130585?s=460&v=4"
-        height="250px" width="250px" class="rounded-circle z-depth-1" alt="sidHicks"></span>
+    <span class="bounce_Img img-animation"><img src="https://avatars0.githubusercontent.com/u/51130585?s=460&v=4"
+        height="250px" width="250px" class="z-depth-1" alt="sidHicks"></span>
     <h5 class="font-weight-bold mb-3 titleBio">Sid Hicks</h5>
     <p class="text-uppercase blue-text"><strong>Front-End Development</strong></p>
     <p class="white-text">I'm a Full Stack Web Developer living in sunny Orlando, Florida. I spend my free time
@@ -32,10 +33,11 @@
     <!-- Grid column -->
 
     <!-- Grid column -->
+
   <div class="col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-5 avatar">
 
-      <span class="bounce_Img"><img src="https://avatars0.githubusercontent.com/u/53629644?s=400&v=4" height="250px" width="250px"
-        class="rounded-circle z-depth-1" alt="Carl Robinson"></span>
+      <span class="bounce_Img img-animation"><img src="https://avatars0.githubusercontent.com/u/53629644?s=400&v=4" height="250px" width="250px"
+        class="z-depth-1" alt="Carl Robinson"></span>
 
     <h5 class="font-weight-bold mb-3 titleBio">Carl Robinson</h5>
     <p class="text-uppercase blue-text"><strong>Back-end Development</strong></p>
@@ -56,4 +58,5 @@
       </a>
     </ul>
   </div>
+</div>
 @endsection

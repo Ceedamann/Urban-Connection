@@ -12,4 +12,37 @@ body {
     margin: 0;
     color: white;
     background-color: rgb(150, 150, 150);
+    /* text-align: -webkit-center; */
+}
+
+.avatar {
+    float: left;
+    margin: 130px;
+    border: solid 1px #fff;
+}
+
+img {
+    animation-name: bio-pic;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: ease-in; */
+}
+
+@keyframes bio-pic {
+    0% {
+        border-radius: 0;
+    }
+    33% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 100%;
+    }
+    33% {
+        border-radius: 50%;
+    }
+    }
+    100% {
+        border-radius: 0%;
+    }
 }
