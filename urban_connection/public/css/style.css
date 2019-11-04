@@ -6,12 +6,12 @@ html, body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)), url('https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ');
+}
 
-.container{
+.container {
     margin auto 0;
-    background-color: black;
-    color: white;
 }
 
