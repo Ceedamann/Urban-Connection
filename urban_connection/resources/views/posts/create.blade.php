@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content1')
+@section('content')
 
 <div class="container mt-4" style="color: black;">
     <div class="row">
@@ -75,7 +75,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <div class="form-group">                    
+                    <div class="form-group">
                             @if($tags->count()>0)
                             <label for="tags">Tags</label>
                             <select name="tags[]" id="tags" class="form-control tags-selector" multiple>
@@ -86,12 +86,12 @@
                                     selected
                                 @endif
                             @endif
-                            >                        
+                            >
                             {{$tag->name}}
                             </option>
                             @endforeach
                             </select>
-                            @endif                        
+                            @endif
                     </div>
                     <div class="form-group">
                         <button type='submit' class="btn btn-success">{{isset($post)?"Update Post":"Create Post"}}</button>
