@@ -90,7 +90,7 @@
                         @yield('content')
                     </div>
                 </div>
-                <div class="d-flex justify-content-end mb-2">
+                <div class="d-flex justify-content-end mt-2 mb-2">
                         <a href="{{route('categories.create')}}" class="btn btn-success">Add Category</a>
                 </div>
             </div>

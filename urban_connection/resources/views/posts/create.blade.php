@@ -1,71 +1,95 @@
 @extends('layouts.app')
 
 @section('content1')
-    <div class="card card-default">
-        <div class="card-header">
-            Create Post
+
+<div class="container mt-4" style="color: black;">
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="{{route('posts.index')}}">Posts</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="{{route('categories.index')}}">Categories</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="{{route('tags.index')}}">Tags</a>
+                </li>
+            </ul>
+            <ul class="list-group mt-5">
+                <li class="list-group-item">
+                    <a href="{{route('trashed-posts.index')}}">Trashed posts</a>
+                </li>
+            </ul>
         </div>
-        <div class="card-body">
-        @include("partials.errors")
-            <form action="{{isset($post)? route('posts.update', $post->id):route('posts.store')}}" method="POST" enctype="multipart/form-data">
-                @csrf
-                @if(isset($post))
-                @method("PUT")
-                @endif
-                <div class="form-group">
-                    <label for="title">Title</label>
-                    <input type="text" class="form-control" name="title" id='title' value="{{isset($post)?$post->title:''}}">
-                </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea name="description" id="description" cols="5" rows="5" class="form-control">{{isset($post)?$post->description:''}}</textarea>                    
-                </div>
-                <div class="form-group">
-                <input id="content" type="hidden" name="content" value="{{isset($post)?$post->content:''}}">
-                    <trix-editor class="trix-content" input="content"></trix-editor>                    
-                </div>
-                <div class="form-group">
-                    <label for="published_at">Published at</label>
-                    <input type="text" class="form-control" name="published_at" id='published_at' value="{{isset($post)?$post->published_at:''}}">
-                </div>
-                @if(isset($post))
+
+        <div class="card card-default">
+            <div class="card-header">
+                Create Post
+            </div>
+            <div class="card-body">
+            @include("partials.errors")
+                <form action="{{isset($post)? route('posts.update', $post->id):route('posts.store')}}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @if(isset($post))
+                    @method("PUT")
+                    @endif
                     <div class="form-group">
-                        <img src="{{ asset('storage/'.$post->image)}}" alt="{{$post->title}}" style="width:100%">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control" name="title" id='title' value="{{isset($post)?$post->title:''}}">
                     </div>
-                @endif
-                <div class="form-group">
-                    <label for="image">Image</label>
-                    <input type="file" class="form-control" name="image" id='image'>
-                </div>
-                <div class="form-group">
-                    <label for="category">Category</label>
-                    <select name="category" class="form-control" id="category">
-                        @foreach($categories as $category)
-                            <option value="{{$category->id}}"
-                            @if(isset($post))
-                                @if($category->id === $post->category_id)
-                                    selected
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="5" rows="5" class="form-control">{{isset($post)?$post->description:''}}</textarea>
+                    </div>
+                    <div class="form-group">
+                    <input id="content" type="hidden" name="content" value="{{isset($post)?$post->content:''}}">
+                        <trix-editor class="trix-content" input="content"></trix-editor>
+                    </div>
+                    <div class="form-group">
+                        <label for="published_at">Published at</label>
+                        <input type="text" class="form-control" name="published_at" id='published_at' value="{{isset($post)?$post->published_at:''}}">
+                    </div>
+                    @if(isset($post))
+                        <div class="form-group">
+                            <img src="{{ asset('storage/'.$post->image)}}" alt="{{$post->title}}" style="width:100%">
+                        </div>
+                    @endif
+                    <div class="form-group">
+                        <label for="image">Image</label>
+                        <input type="file" class="form-control" name="image" id='image'>
+                    </div>
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select name="category" class="form-control" id="category">
+                            @foreach($categories as $category)
+                                <option value="{{$category->id}}"
+                                @if(isset($post))
+                                    @if($category->id === $post->category_id)
+                                        selected
+                                    @endif
                                 @endif
-                            @endif
-                            >
-                                {{$category->name}}
-                            </option>
-                        @endforeach
-                    </select>
-                </div>
-                <div class="form-group">
-                    <button type='submit' class="btn btn-success">{{isset($post)?"Update Post":"Create Post"}}</button>
-                </div>
-            </form>
+                                >
+                                    {{$category->name}}
+                                </option>
+                            @endforeach
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type='submit' class="btn btn-success">{{isset($post)?"Update Post":"Create Post"}}</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
+</div>
 
 @stop
 @section("scripts")
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-flatpickr('#published_at',{enableTime: true,}) 
+flatpickr('#published_at',{enableTime: true,})
 </script>
 
 @stop
