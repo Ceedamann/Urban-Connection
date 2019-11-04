@@ -30,11 +30,6 @@
                     </ul>
                 </div>
                 <div class="col-md-8">
-
-                    <div class="d-flex justify-content-end mb-2">
-                        <a href="{{route('posts.create')}}" class="btn btn-success">Add Post</a>
-                    </div>
-
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
                             <div class="card-body">
@@ -86,9 +81,14 @@
                                 @endif
                             </div>
                         </div>
+                        <div class="d-flex justify-content-end mb-2">
+                            <a href="{{route('posts.create')}}" class="btn btn-success">Add Post</a>
+                        </div>
                     </div>
 
-            </div>
+
+
+                </div>
         </div>
     </div>
         @else
