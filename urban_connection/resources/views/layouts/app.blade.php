@@ -18,57 +18,55 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/about.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/.css') }}" rel="stylesheet">
     @stack('scripts')
     @yield("css")
-</head>
+    </head>
+
     <body>
-        <div id="app">
-            <div class="container">
-                @include('inc.navbar')
-                @include('dashboard.dashboard')
-
-                @yield('content')
-
-
-
-            {{-- <div class="container">
-                <main class="py-4">
-                @auth
+            <div id="app">
+                    @include('inc.navbar')
                     <div class="container">
-                    @if(session()->has('success'))
-                        <div class="alert alert-success">
-                            {{session()->get('success')}}
-                        </div>
-                    @endif
-                    <div class="row">
-                        <div class="col-md-4 mt-5">
-                            <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <a href="{{route('posts.index')}}">Posts</a>
+                        <main class="py-4">
+                        @auth
+                            <div class="container">
+                            @if(session()->has('success'))
+                                <div class="alert alert-success">
+                                    {{session()->get('success')}}
+                                </div>
+                            @endif
+                            <div class="row">
+                                <div class="col-md-4 mt-5">
+                                    <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <a href="{{route('posts.index')}}">Posts</a>
 
-                                    </li>
-                                    <li class="list-group-item">
-                                        <a href="{{route('categories.index')}}">Categories</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="{{route('categories.index')}}">Categories</a>
 
-                                    </li>
-                            </ul>
-                            <ul class="list-group mt-5">
-                                <li class="list-group-item">
-                                    <a href="{{route('trashed-posts.index')}}">Trashed posts</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-8 mt-5">
+                                            </li>
+                                    </ul>
+                                    <ul class="list-group mt-5">
+                                        <li class="list-group-item">
+                                            <a href="{{route('trashed-posts.index')}}">Trashed posts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-8 mt-5">
+
+                                    @yield('content')
+
+                                </div>
                         </div>
                     </div>
-                @else
+
+                            @else
+                            @yield('content')
+                            @endauth
+                        </main>
+                    </div>
                 </div>
-                </main>
-                @endauth
-            </div> --}}
-        </div>
-        </div>
     <!-- Scripts -->
     @yield('scripts')
     <script src="{{ asset('js/app.js') }}"></script>
