@@ -14,7 +14,7 @@
 
 
         <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/index.css') }}">
     </head>
     <body>
         <video autoplay muted loop id="myVideo">

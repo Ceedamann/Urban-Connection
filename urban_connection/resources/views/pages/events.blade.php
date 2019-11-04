@@ -1,10 +1,9 @@
 @extends('layouts.app')
 @push('styles')
-    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-@endpush
-@push('styles')
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
 @endpush
+
+@section('content')
     <section>
         <div class="leftBox">
             <div class="content">
@@ -81,5 +80,4 @@
             </ul>
         </div>
     </section>
-</body>
-</html>
+@endsection
