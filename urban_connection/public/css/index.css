@@ -1,11 +1,17 @@
-html, body {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
     background-color: #fff;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     height: 100vh;
     margin: 0;
     color: white;
-    background-color: black;
+    background-color: #000000;
 }
 .full-height {
     height: 100%;
@@ -37,9 +43,12 @@ html, body {
 }
 
 @keyframes title {
-    0% {left: -1000px;}
-    100% {left: 0;}
-
+    0% {
+        left: -1000px;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 .links > a {
@@ -47,7 +56,7 @@ html, body {
     padding: 0 25px;
     font-size: 18px;
     font-weight: 600;
-    letter-spacing: .1rem;
+    letter-spacing: 0.1rem;
     text-decoration: none;
     text-transform: uppercase;
     position: relative;
@@ -57,8 +66,12 @@ html, body {
 }
 
 @keyframes links {
-    0% {left: 1000px;}
-    100% {left: 0;}
+    0% {
+        left: 1000px;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 .m-b-md {
@@ -90,6 +103,5 @@ html, body {
     border-color: #e91e63;
     text-decoration: none;
     transition-property: transform;
-    transition: .5s;
-
+    transition: 0.5s;
 }

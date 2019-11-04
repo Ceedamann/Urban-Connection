@@ -1,21 +1,11 @@
-{{-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+@extends('layouts.app')
+@include('inc.navbar')
+@push('styles')
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+@endpush
+@push('styles')
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-    <title>Events</title>
-</head>
-<body> --}}
-    @extends('layouts.app');
-    @push('styles')
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
-    @endpush
-    @include('inc.navbar');
-    @push('styles')
-        <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-    @endpush
+@endpush
     <section>
         <div class="leftBox">
             <div class="content">
@@ -42,7 +32,7 @@
                         </p>
                         <a href="#">View Details</a>
                     </div>
-                    <div style="clear:both;"></div>>
+                    <div style="clear:both"></div>
                 </li>
                 <li>
                     <div class="time">

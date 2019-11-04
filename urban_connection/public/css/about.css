@@ -1,6 +1,12 @@
-html, body {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
     background-color: #fff;
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     height: 100vh;
     margin: 0;

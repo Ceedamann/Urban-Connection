@@ -9,7 +9,6 @@ body {
 section {
     width: 100%;
     height: 100vh;
-    height: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
         url("https://ak0.picdn.net/shutterstock/videos/1025207180/thumb/4.jpg");
     background-size: cover;
@@ -113,6 +112,7 @@ section .events ul li .details {
     width: 70%;
     height: 100%;
     float: left;
+    color: black;
 }
 
 section .events ul li .details h3 {
