@@ -19,6 +19,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
     <link href="{{ asset('css/index.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/about.css') }}" rel="stylesheet">
 
     @stack('scripts')
     @yield("css")
