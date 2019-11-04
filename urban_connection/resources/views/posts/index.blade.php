@@ -2,7 +2,7 @@
 
 @section('content')
 
-<main class="py-4">
+<main class="py-4" style="color: black;">
         @auth
         <div class="container">
         @if(session()->has('success'))
