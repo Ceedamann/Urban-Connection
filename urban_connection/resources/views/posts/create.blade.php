@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content1')
     <div class="card card-default">
         <div class="card-header">
             Create Post

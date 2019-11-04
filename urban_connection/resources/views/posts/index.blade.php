@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('content')
+@section('content1')
 
     <div class="d-flex justify-content-end mb-2">
         <a href="{{route('posts.create')}}" class="btn btn-success">Add Post</a>
