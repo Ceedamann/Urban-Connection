@@ -1,5 +1,11 @@
-html, body {
-    font-family: 'Nunito', sans-serif;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    font-family: "Nunito", sans-serif;
     font-weight: 200;
     margin: 0;
     background-size: cover;
@@ -7,11 +13,6 @@ html, body {
     background-position: center;
     text-align: center;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)), url('https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ');
-
-.container{
-    margin auto 0;
-    background-color: black;
-    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
+        url("https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ");
 }
-
