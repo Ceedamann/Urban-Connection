@@ -17,7 +17,7 @@ Route::get('/about', 'PagesController@about');
 Route::get('/events', 'PagesController@events');
 Route::get('/markets', 'PagesController@markets');
 Route::get('/business', 'PagesController@business');
-
+Route::get('details/posts/{post}', [PostsController::class, 'show'])->name('details.show');
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){
