@@ -10,7 +10,8 @@ class PagesController extends Controller
 {
     public function index() {
         $title = 'Welcome to Urban Connection';
-        return view('pages.index')->with('title', $title);
+        return view('pages.index')->with('title', $title)
+        ->with('categories', Category::all());;
     }
 
     public function markets() {
