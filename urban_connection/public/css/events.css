@@ -29,6 +29,8 @@ section .leftBox .content {
     background: rgba(0, 0, 0, 0.5);
     padding: 40px;
     transition: 0.5s;
+    border: 1px solid grey;
+    box-shadow: 6px 6px 6px grey;
 }
 
 section .leftBox .content:hover {
@@ -70,7 +72,10 @@ section .events ul li {
     background: #fff;
     box-sizing: border-box;
     height: 200px;
-    margin: 15px 0;
+    margin: 15px auto;
+    width: 850px;
+    border: 1px solid grey;
+    box-shadow: 6px 6px 6px grey;
 }
 
 section .events ul li .time {
@@ -138,6 +143,31 @@ section .events ul li .details a {
     margin-top: 15px;
     font-size: 18px;
     transition: 0.5s;
+}
+
+/* section .events ul li .details p {
+    position: relative;
+    margin: 15px 0 0;
+    padding: 0;
+    font-size: 16px;
+}  */
+
+.leftBox a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 2px solid #262626;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: 0.5s;
+    color: white;
+}
+
+.leftBox a:hover {
+    background: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
 }
 
 section .events ul li .details a:hover {

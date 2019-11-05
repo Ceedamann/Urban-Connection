@@ -46,7 +46,7 @@ class PostsController extends Controller
             'description'=>$request->description,
             'content'=>$request->content,
             'image'=>$image,
-            "published_at"=>$request->published_at,
+            "event_date"=>$request->event_date,
             'category_id'=>$request->category,
         ]);
         if($request->tags){
@@ -64,7 +64,7 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-     
+
     }
 
     /**
@@ -87,7 +87,7 @@ class PostsController extends Controller
      */
     public function update(UpdatePostRequest $request, Post $post)
     {
-        $data = $request->only(['title', 'description', 'published_at', 'content']);
+        $data = $request->only(['title', 'description', 'event_date', 'content']);
         if($request->hasFile('image')){
             $image = $request->image->store('posts');
             $post->deleteImage();
@@ -123,7 +123,7 @@ class PostsController extends Controller
     {
         $trashed = Post::onlyTrashed()->get();
         return view('posts.index')->with("posts",$trashed);
-        
+
     }
 
     public function restore($id){
