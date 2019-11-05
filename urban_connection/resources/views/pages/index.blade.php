@@ -55,15 +55,6 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            @foreach($posts as $post)
-                <div class="col-md-6">
-                    <img height="200px" width="200px" src="{{ asset('storage/'.$post->image)}}" alt="">
-                    <p>{{$post->category->name}}</p>
-                    <h5>{{$post->title}}</h5>
-                </div>
-            @endforeach
-        </div>
-      
+
     </body>
 </html>

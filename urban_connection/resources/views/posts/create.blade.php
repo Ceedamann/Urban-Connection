@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container mt-4" style="color: black;">
+<div class="container mt-1" style="color: black;">
     <div class="row">
         <div class="card card-default">
             <div class="card-header">
@@ -24,12 +24,13 @@
                         <textarea name="description" id="description" cols="5" rows="5" class="form-control">{{isset($post)?$post->description:''}}</textarea>
                     </div>
                     <div class="form-group">
-                    <input id="content" type="hidden" name="content" value="{{isset($post)?$post->content:''}}">
+                        <label for="content">Content</label>
+                        <input id="content" type="hidden" name="content" value="{{isset($post)?$post->content:''}}">
                         <trix-editor class="trix-content" input="content"></trix-editor>
                     </div>
                     <div class="form-group">
-                        <label for="published_at">Published at</label>
-                        <input type="text" class="form-control" name="published_at" id='published_at' value="{{isset($post)?$post->published_at:''}}">
+                        <label for="event_date">Date of Event</label>
+                        <input type="text" class="form-control" name="event_date" id='event_date' value="{{isset($post)?$post->event_date:''}}">
                     </div>
                     @if(isset($post))
                         <div class="form-group">
@@ -89,9 +90,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/1.2.0/trix.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-flatpickr('#published_at',{enableTime: true,})
+flatpickr('#event_date',{enableTime: true, dateFormat: "M d Y"})
 $(document).ready(function() {
     $('.tags-selector').select2();
+
 });
 </script>
 

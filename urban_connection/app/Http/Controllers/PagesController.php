@@ -10,14 +10,12 @@ class PagesController extends Controller
 {
     public function index() {
         $title = 'Welcome to Urban Connection';
-        return view('pages.index')->with('categories', Category::all())
-        ->with('tags', Tag::all())
-        ->with('posts', Post::all());
+        return view('pages.index')->with('title', $title);
     }
 
     public function markets() {
         $title = 'Welcome to markets';
-        return view('pages.markets')->with();
+        return view('pages.markets')->with('title', $title);
     }
 
     public function business() {
@@ -27,7 +25,10 @@ class PagesController extends Controller
     }
     public function events() {
         $title = 'Welcome to events';
-        return view('pages.events')->with('title', $title);
+        return view('pages.events')
+                ->with('tags', Tag::all())
+                ->with('posts', Post::all())
+                ->with('categories', Category::all());
     }
 
     public function about() {
