@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app1')
 
 @section('content')
 
@@ -10,25 +10,7 @@
                 {{session()->get('success')}}
              </div>
         @endif
-        <div class="row">
-            <div class="col-md-4">
-                <ul class="list-group">
-                     <li class="list-group-item">
-                         <a href="{{route('posts.index')}}">Posts</a>
-                     </li>
-                     <li class="list-group-item">
-                         <a href="{{route('categories.index')}}">Categories</a>
-                     </li>
-                     <li class="list-group-item">
-                         <a href="{{route('tags.index')}}">Tags</a>
-                     </li>
-                </ul>
-                <ul class="list-group mt-5">
-                     <li class="list-group-item">
-                         <a href="{{route('trashed-posts.index')}}">Trashed posts</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="row">            
                 <div class="col-md-8">
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
