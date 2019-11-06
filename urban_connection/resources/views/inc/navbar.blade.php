@@ -19,13 +19,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/about">About</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="/markets">Markets</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/business">Business</a>
+                </li> --}}
                 <li class="nav-item">
-                    <a class="nav-link" href="/events">Events</a>
+                    <a class="nav-link" href="/events">Posts</a>
                 </li>
             </ul>
 
