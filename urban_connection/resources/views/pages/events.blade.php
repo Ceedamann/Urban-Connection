@@ -3,14 +3,15 @@
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
 @endpush
 
-                    @foreach($categories as $category)
-                    <a class='btn-link' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
-                    @endforeach||
-                    @foreach($tags as $tag)
-                    <a class='btn-link' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
-                    @endforeach
+        @foreach($categories as $category)
+        <a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
+        @endforeach||
+        @foreach($tags as $tag)
+        <a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
+        @endforeach
 
 @section('content')
+
     <section>
         <div class="leftBox">
             <div class="content">
@@ -27,9 +28,7 @@
                 @foreach($posts as $post)
                 <li>
                 <div class="time">
-                        <h2>
-                            <span>{{$post->event_date}}</span>
-                        </h2>
+                        <a href="{{route('details.show', $post->id)}}"><img src="{{ asset('storage/'.$post->image)}}" alt=""></a>
                     </div>
                     <div class="details">
                         <h3>{{$post->title}}</h3>
@@ -44,5 +43,6 @@
         </div>
     </section>
 
+    {{-- @include('tags') --}}
 
 @endsection
