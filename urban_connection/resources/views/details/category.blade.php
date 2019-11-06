@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @push('styles')
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/about.css') }}" rel="stylesheet">
 @endpush
 
 {{-- @foreach($categories as $category)
@@ -24,7 +26,9 @@
                 @foreach($posts as $post)
                 <li>
                 <div class="time">
+
                         <a href="{{route('details.show', $post->id)}}"><img src="{{ asset('storage/'.$post->image)}}" alt=""></a>
+
                     </div>
                     <div class="details">
                         <h3>{{$post->title}}</h3>

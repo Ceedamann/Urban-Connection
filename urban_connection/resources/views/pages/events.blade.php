@@ -22,10 +22,12 @@
             </div>
             <a href="/posts">Post Event</a>
         </div>
+            <a href="/posts">Post Event</a>
+    </div>
 
-        <div class="events">
-            <ul>
-                @foreach($posts as $post)
+    <div class="events">
+        <ul>
+            @foreach($posts as $post)
                 <li>
                 <div class="time">
                         <a href="{{route('details.show', $post->id)}}"><img src="{{ asset('storage/'.$post->image)}}" alt=""></a>
@@ -34,7 +36,9 @@
                         <h3>{{$post->title}}</h3>
                         <p>
                             {{$post->description}}
-                        </p>
+                        <br/>
+                            {{$post->event_date}}
+                        <p/>
                         <a href="{{route('details.show', $post->id)}}">View Details</a>
                     </div>
                 </li>
@@ -42,7 +46,4 @@
             </ul>
         </div>
     </section>
-
-    {{-- @include('tags') --}}
-
 @endsection
