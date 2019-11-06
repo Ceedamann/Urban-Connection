@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@push('styles')
+    <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+@endpush
 @section('content')
     <section>
         <div class="header">
@@ -42,19 +45,20 @@
         @endforeach
     </section>
 
-    @foreach($categories as $category)
-        <div class="badge badge-secondary">
-        <a href="{{route('details.category', $category->id)}}">
-            {{$category->name}}
-        </a>
-        </div>
+    <div class="tags">
+        @foreach($categories as $category)
+         <div class="badge badge-secondary">
+          <a href="{{route('details.category', $category->id)}}">
+              {{$category->name}}
+          </a>
+          </div>
         @endforeach
         ||
         @foreach($tags as $tag)
         <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
         {{$tag->name}}
         </a>
-    @endforeach
-
-
-@endsection
+        </div>
+        @endforeach
+    </div>
+    @endsection

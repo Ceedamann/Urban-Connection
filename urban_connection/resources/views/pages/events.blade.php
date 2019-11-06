@@ -3,16 +3,19 @@
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
 @endpush
 
-        @foreach($categories as $category)
-        <a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
-        @endforeach||
-        @foreach($tags as $tag)
-        <a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
-        @endforeach
-
 @section('content')
 
-    <section>
+<div class="tags">
+@foreach($categories as $category)
+<a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
+@endforeach||
+@foreach($tags as $tag)
+<a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
+@endforeach
+</div>
+
+{{-- @include('details.tag') --}}
+<section>
         <div class="leftBox">
             <div class="content">
                 <h1>Events</h1>
