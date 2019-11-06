@@ -21,7 +21,7 @@ body {
     border: solid 1px #fff;
 }
 
-img {
+.avatar span img {
     animation-name: bio-pic;
     animation-duration: 7s;
     animation-fill-mode: forwards;
