@@ -38,7 +38,7 @@
             </ul>
         </div>
     </section>
-
+    <div class="tags">
     @foreach($categories as $category)
                   <div class="badge badge-secondary">
                     <a href="{{route('details.category', $category->id)}}">
@@ -52,7 +52,7 @@
                     {{$tag->name}}
                   </a>
                   @endforeach
-
+                </div>
 @endsection
 
 {{-- @foreach($categories as $category)

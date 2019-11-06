@@ -12,7 +12,8 @@
 
 @section('content')
 
-    <section>
+{{-- @include('details.tag') --}}
+<section>
         <div class="leftBox">
             <div class="content">
                 <h1>Events</h1>
@@ -43,6 +44,6 @@
         </div>
     </section>
 
-    {{-- @include('tags') --}}
+
 
 @endsection

@@ -1,5 +1,5 @@
-@extends('layouts.app')
 @section('content')
+@extends('layouts.app')
     <section>
         <div class="leftBox">
             <div class="content">
@@ -26,6 +26,8 @@
             </ul>
         </div>
     </section>
+
+    <div class="tags">
     @foreach($categories as $category)
         <div class="badge badge-secondary">
         <a href="{{route('details.category', $category->id)}}">
@@ -39,5 +41,5 @@
         {{$tag->name}}
         </a>
     @endforeach
-
+    </div>
 @endsection
