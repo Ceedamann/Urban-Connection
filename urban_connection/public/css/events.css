@@ -106,8 +106,8 @@ section .events ul li .time h2 {
     line-height: 30px;
 }
 
-section .events ul li .time h2 span {
-    font-size: 30px;
+section .events ul li .time img {
+    height: 150px;
 }
 
 section .events ul li .details {

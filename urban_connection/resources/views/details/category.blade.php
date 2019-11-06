@@ -2,7 +2,7 @@
 @push('styles')
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/about.css') }}" rel="stylesheet">
-    
+
 @endpush
 
 @section('content')
@@ -10,9 +10,9 @@
         <div class="leftBox">
             <div class="content">
                 <h1>Category: {{$category->name}}</h1>
-              
+
             </div>
-           
+
         </div>
 
         <div class="events">
@@ -20,9 +20,7 @@
                 @foreach($posts as $post)
                 <li>
                 <div class="time">
-                        <h2>
-                            <span>{{$post->event_date}}</span>
-                        </h2>
+                        <img src="{{ asset('storage/'.$post->image)}}" alt="{{$post->title}}">
                     </div>
                     <div class="details">
                         <h3>{{$post->title}}</h3>
