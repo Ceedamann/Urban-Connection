@@ -16,9 +16,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
-                </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="/markets">Markets</a>
                 </li>
@@ -27,6 +24,9 @@
                 </li> --}}
                 <li class="nav-item">
                     <a class="nav-link" href="/events">Posts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
                 </li>
             </ul>
 
