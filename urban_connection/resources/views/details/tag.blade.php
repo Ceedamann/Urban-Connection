@@ -3,7 +3,7 @@
     <section>
         <div class="leftBox">
             <div class="content">
-                <h1>Tag: </h1>
+                <h1>Tag: {{$tag->name}} </h1>
                 
             </div>
           
