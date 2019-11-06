@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'UC') }}</title>
 
     <!-- Scripts -->
    
@@ -87,23 +87,29 @@
             <div class="row">
                 <div class="col-md-4">
                     <ul class="list-group">  
-                            <li class="list-group-item">
+                        
+                        <li class="list-group-item">
                                 <a href="{{route('categories.index')}}">Categories</a>        
                             </li>
                             <li class="list-group-item">
                                 <a href="{{route('tags.index')}}">Tags</a>        
                             </li>
+                            <li class="list-group-item">
+                                <a href="{{route('tags.index')}}">User</a>        
+                            </li>                       
+                           
                         
                             <li class="list-group-item">
                                 <a href="{{route('posts.index')}}">Posts</a>        
                             </li>
                     </ul>
+                    
                     <ul class="list-group mt-5">                          
                             <li class="list-group-item">
                                 <a href="{{route('trashed-posts.index')}}">Trashed posts</a>        
                             </li>                        
                     </ul>
-        
+                    
                  </div>
                 <div class="col-md-8">
         

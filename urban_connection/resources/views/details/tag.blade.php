@@ -1,25 +1,12 @@
 @extends('layouts.app')
-@push('styles')
-    <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-@endpush
-
-                    @foreach($categories as $category)
-                    <a class='btn-link' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
-                    @endforeach||
-                    @foreach($tags as $tag)
-                    <a class='btn-link' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
-                    @endforeach
-
 @section('content')
     <section>
         <div class="leftBox">
             <div class="content">
-                <h1>Events</h1>
-                <p>
-                    There's nothing more important than keeping in touch with your community. Use this spot to checkout an upcoming event. Post a new event if you like and be sure to share it with a couple of friends.
-                </p>
+                <h1>Tag: </h1>
+                
             </div>
-            <a href="/posts">Post Event</a>
+          
         </div>
 
         <div class="events">
@@ -43,6 +30,18 @@
             </ul>
         </div>
     </section>
+    @foreach($categories as $category)
+                  <div class="">
+                    <a href="{{route('details.category', $category->id)}}">
+                      {{$category->name}}
+                    </a>
+                  </div>
+                  @endforeach
 
+                  @foreach($tags as $tag)
+                  <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
+                    {{$tag->name}}
+                  </a>
+                  @endforeach
 
 @endsection

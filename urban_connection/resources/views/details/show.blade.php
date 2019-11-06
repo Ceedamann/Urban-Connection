@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>{{$post->title}}</title>
+
+    <!-- Styles -->
+    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="icon" href="../assets/img/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="/">
+           UC
+          </a>
+        </div>
+
+      </div>
+    </nav><!-- /.navbar -->
+
+
+    <!-- Header -->
+    <header class="header text-white h-fullscreen pb-80" style="background-image: url({{asset('storage/'.$post->image)}});" data-overlay="9">
+      <div class="container text-center">
+
+        <div class="row h-100">
+          <div class="col-lg-8 mx-auto align-self-center">
+
+            <p class="opacity-70 text-uppercase small ls-1">{{$post->category->name}}</p>
+            <h1 class="display-4 mt-7 mb-8">{{$post->title}}</h1>
+            <p>{{$post->description}}</p>
+
+          </div>
+
+          <div class="col-12 align-self-end text-center">
+            <a class="scroll-down-1 scroll-down-white" href="#section-content"><span></span></a>
+          </div>
+
+        </div>
+
+      </div>
+    </header><!-- /.header -->
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Blog content
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section" id="section-content">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+              <p class="lead">{!!$post->content!!}</p>
+
+              <hr class="w-100px">              
+
+            </div>
+          </div>
+
+          <div class="text-center my-6">
+            <img class="rounded-md" src="{{asset('storage/'.$post->image)}}" alt="...">
+          </div>
+
+
+ 
+          <div class="gap-xy-2 mt-6">
+                  
+                  @foreach($post->tags as $tag)
+                  <a class="badge badge-pill badge-secondary" href="#">{{$tag->name}}</a>
+                  @endforeach
+   
+                 </div>
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+      <!--
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      | Comments
+      |‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒‒
+      !-->
+      <div class="section bg-gray">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+
+            
+
+              <hr>
+
+              <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+
+var disqus_config = function () {
+this.page.url = "{{config('app.url')}}/details/posts/{{$post->id}}";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = {{$post->id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://urbanconncetion.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+           
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+
+          <div class="col-6 col-lg-3">
+            <a href="/">UC</a>
+          </div>                  
+
+        </div>
+      </div>
+    </footer><!-- /.footer -->
+
+
+    <!-- Scripts -->
+    <script src="{{asset('js/page.min.js')}}"></script>
+    <script src="{{asset('js/scripts.js')}}"></script>
+
+  </body>
+</html>
