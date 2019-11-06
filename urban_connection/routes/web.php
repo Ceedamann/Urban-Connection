@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Details\PostsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,9 +15,10 @@
 Route::get('/', 'PagesController@index');
 Route::get('/about', 'PagesController@about');
 Route::get('/events', 'PagesController@events');
-Route::get('/markets', 'PagesController@markets');
-Route::get('/business', 'PagesController@business');
+
 Route::get('details/posts/{post}', [PostsController::class, 'show'])->name('details.show');
+Route::get('details/categories/{category}', [PostsController::class, 'category'])->name('details.category');
+Route::get('details/tags/{tag}', [PostsController::class, 'tag'])->name('details.tag');
 Auth::routes();
 
 Route::middleware(['auth'])->group(function(){

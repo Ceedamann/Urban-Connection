@@ -48,9 +48,6 @@
                 </div>
 
                 <div class="links">
-                    @foreach($categories as $category)
-                    <a class='btn-link' href="/business">{{$category->name}}</a>
-                    @endforeach
                     <a class='btn-link' href="/about">About us</a>                    
                     <a class='btn-link' href="/events">Posts</a>                   
                 </div>
