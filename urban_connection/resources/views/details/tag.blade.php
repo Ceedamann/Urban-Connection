@@ -1,5 +1,8 @@
-@section('content')
 @extends('layouts.app')
+@push('styles')
+    <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+@endpush
+@section('content')
     <section>
         <div class="leftBox">
             <div class="content">
@@ -26,7 +29,6 @@
             </ul>
         </div>
     </section>
-
     <div class="tags">
     @foreach($categories as $category)
         <div class="badge badge-secondary">

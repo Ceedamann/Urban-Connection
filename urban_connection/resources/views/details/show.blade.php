@@ -17,20 +17,7 @@
     <link rel="icon" href="../assets/img/favicon.png">
   </head>
 
-  <body>
-
-      {{-- @include('inc.navbar') --}}
-    <!-- Navbar -->
-    {{-- <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
-      <div class="container">
-        <div class="navbar-left">
-          <button class="navbar-toggler" type="button">&#9776;</button>
-          <a class="navbar-brand" href="/">
-           UC
-          </a>
-        </div>
-      </div>
-    </nav><!-- /.navbar --> --}}
+  <body style='font-family: "Nunito", sans-serif;'>
     <nav class="navbar navbar-expand navbar-dark bg-dark" data-navbar="sticky">
         @csrf
         <div class="container">
@@ -48,12 +35,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                     </li>
-                    {{-- <li class="nav-item">
-                        <a class="nav-link" href="/markets">Markets</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/business">Business</a>
-                    </li> --}}
+
                     <li class="nav-item">
                         <a class="nav-link" href="/events">Posts</a>
                     </li>
@@ -149,18 +131,15 @@
 
 
 
-          <div class="gap-xy-2 mt-6">
+          <div class="gap-xy-2 mt-6 leftBox">
 
                   @foreach($post->tags as $tag)
-                  <a class="badge badge-pill badge-secondary" href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
+                  <a class="" href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
                   @endforeach
 
                  </div>
-
             </div>
           </div>
-
-
         </div>
       </div>
 
@@ -176,31 +155,28 @@
 
           <div class="row">
             <div class="col-lg-8 mx-auto">
-
-
-
               <hr>
-
               <div id="disqus_thread"></div>
-<script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+              <script>
 
-var disqus_config = function () {
-this.page.url = "{{config('app.url')}}/details/posts/{{$post->id}}";  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = {{$post->id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://urbanconncetion.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+              var disqus_config = function () {
+              this.page.url = "{{config('app.url')}}/details/posts/{{$post->id}}";  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = {{$post->id}}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://urbanconncetion.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+              </script>
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
             </div>
@@ -220,7 +196,7 @@ s.setAttribute('data-timestamp', +new Date());
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="/">UC</a>
+            <a href="/">Urban ConnectionC</a>
           </div>
 
         </div>

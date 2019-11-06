@@ -2,15 +2,6 @@
 @push('styles')
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
 @endpush
-
-{{-- @foreach($categories as $category)
-<a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
-@endforeach||
-@foreach($tags as $tag)
-<a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
-@endforeach --}}
-
-
 @section('content')
     <section>
         <div class="leftBox">
@@ -40,22 +31,6 @@
     </section>
     <div class="tags">
     @foreach($categories as $category)
-                  <div class="badge badge-secondary">
-                    <a href="{{route('details.category', $category->id)}}">
-                      {{$category->name}}
-                    </a>
-                  </div>
-                  @endforeach
-                  ||
-                  @foreach($tags as $tag)
-                  <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
-                    {{$tag->name}}
-                  </a>
-                  @endforeach
-                </div>
-@endsection
-
-{{-- @foreach($categories as $category)
         <div class="badge badge-secondary">
         <a href="{{route('details.category', $category->id)}}">
             {{$category->name}}
@@ -67,4 +42,6 @@
         <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
         {{$tag->name}}
         </a>
-    @endforeach --}}
+        @endforeach
+    </div>
+@endsection

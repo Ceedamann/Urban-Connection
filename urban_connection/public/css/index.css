@@ -35,7 +35,24 @@ body {
 }
 
 .tags {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0);
+}
+
+.tags a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #262626;
+    font-size: 18px;
+    transition: 0.5s;
+    color: white;
+    background: rgba(0, 0, 0);
+}
+
+.tags a:hover {
+    background-color: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
 }
 
 .flex-center {
