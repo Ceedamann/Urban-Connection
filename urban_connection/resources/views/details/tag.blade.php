@@ -1,7 +1,13 @@
 @extends('layouts.app')
 @section('content')
     <section>
-
+        <div class="header">
+            @foreach($tags as $tag)
+            <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
+                {{$tag->name}}
+            </a>
+            @endforeach
+        </div>
         <div class="leftBox">
             <div class="content">
                 <h1>Tag: {{$tag->name}} </h1>
@@ -29,18 +35,12 @@
             </ul>
         </div>
         @foreach($categories as $category)
-                      <div class="">
-                        <a href="{{route('details.category', $category->id)}}">
-                          {{$category->name}}
-                        </a>
-                      </div>
-                      @endforeach
-
-                      @foreach($tags as $tag)
-                      <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
-                        {{$tag->name}}
-                      </a>
-                      @endforeach
+            <div class="">
+                <a href="{{route('details.category', $category->id)}}">
+                    {{$category->name}}
+                </a>
+            </div>
+        @endforeach
     </section>
 
 @endsection
