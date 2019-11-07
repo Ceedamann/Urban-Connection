@@ -1,7 +1,5 @@
 @extends('layouts.app1')
-
 @section('content')
-
 <main class="py-4" style="color: black;">
         @auth
         <div class="container">
@@ -11,7 +9,7 @@
              </div>
         @endif
         <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
                             <div class="card-body">
@@ -21,8 +19,8 @@
                                         <th>Image</th>
                                         <th>Title</th>
                                         <th>Category</th>
-                                        <th></th>
-                                        <th></th>
+                                        <th>Edit</th>
+                                        <th>Trash</th>
                                     </thead>
                                     <tbody>
                                         @foreach($posts as $post)
