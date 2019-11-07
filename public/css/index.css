@@ -74,17 +74,44 @@ body {
 .title {
     font-size: 120px;
     position: relative;
-    animation-name: title;
+    animation-name: slide;
     animation-duration: 3s;
     animation-fill-mode: forwards;
 }
 
-@keyframes title {
+@keyframes slide {
     0% {
         left: -1000px;
     }
     100% {
         left: 0;
+    }
+}
+
+.changes {
+    animation-name: color-fade;
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: infinite; */
+}
+@keyframes color-fade {
+    0% {
+        left: -1000px;
+    }
+    20% {
+        color: #b74608;
+    }
+    40% {
+        color: #fae196;
+    }
+    60% {
+        color: #f09431;
+    }
+    80% {
+        color: #7f968d;
+    }
+    100% {
+        left: 0;
+        color: white;
     }
 }
 
@@ -106,8 +133,22 @@ body {
     0% {
         left: 1000px;
     }
+    20% {
+        color: #b74608;
+    }
+    40% {
+        color: #fae196;
+    }
+    60% {
+        color: #f09431;
+    }
+    80% {
+        color: #7f968d;
+    }
     100% {
         left: 0;
+        /* color: #364d57; */
+        color: white;
     }
 }
 
