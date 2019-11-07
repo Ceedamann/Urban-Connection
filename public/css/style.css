@@ -11,8 +11,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
-    height: 120vh;
-    height: 100%;
+    height: 110vh;
+    /* height: 100%; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
         url("https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ");
 }
