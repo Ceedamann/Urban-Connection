@@ -11,6 +11,7 @@
             <div class="content">
                 <h1>Category: {{$category->name}}</h1>
             </div>
+            <a href="/posts">Post Event</a>
         </div>
 
         <div class="events">
