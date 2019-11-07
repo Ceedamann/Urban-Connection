@@ -3,14 +3,17 @@
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
 @endpush
 @section('content')
+
+{{-- <div class="tags">
+        @foreach($categories as $category)
+        <a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
+        @endforeach
+        ||
+        @foreach($tags as $tag)
+        <a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
+        @endforeach
+    </div> --}}
     <section>
-        <div class="header">
-            @foreach($tags as $tag)
-            <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
-                {{$tag->name}}
-            </a>
-            @endforeach
-        </div>
         <div class="leftBox">
             <div class="content">
                 <h1>Tag: {{$tag->name}}</h1>
@@ -36,29 +39,15 @@
                 @endforeach
             </ul>
         </div>
-        @foreach($categories as $category)
-            <div class="">
-                <a href="{{route('details.category', $category->id)}}">
-                    {{$category->name}}
-                </a>
-            </div>
-        @endforeach
     </section>
-
     <div class="tags">
-        @foreach($categories as $category)
-         <div class="badge badge-secondary">
-          <a href="{{route('details.category', $category->id)}}">
-              {{$category->name}}
-          </a>
-          </div>
-        @endforeach
-        ||
-        @foreach($tags as $tag)
-        <a class="badge badge-secondary" href="{{route('details.tag', $tag->id)}}">
-        {{$tag->name}}
-        </a>
+            @foreach($categories as $category)
+            <a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
+            @endforeach
+            ||
+            @foreach($tags as $tag)
+            <a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
+            @endforeach
         </div>
-        @endforeach
-    </div>
+
     @endsection
