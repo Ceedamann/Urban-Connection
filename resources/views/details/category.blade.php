@@ -2,7 +2,8 @@
 @push('styles')
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/about.css') }}" rel="stylesheet">
-
+    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -11,7 +12,7 @@
             <div class="content">
                 <h1>Category: {{$category->name}}</h1>
             </div>
-            <a href="/posts">Post Event</a>
+            <a href="/posts">Create a Post</a>
         </div>
 
         <div class="events">
@@ -19,7 +20,7 @@
                 @foreach($posts as $post)
                 <li>
                 <div class="time">
-                        <img src="{{ asset('storage/'.$post->image)}}" alt="{{$post->title}}">
+                        <img src="{{$post->image}}" alt="{{$post->title}}">
                     </div>
                     <div class="details">
                         <h3>{{$post->title}}</h3>

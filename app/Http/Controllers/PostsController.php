@@ -40,7 +40,7 @@ class PostsController extends Controller
      */
     public function store(CreatePostRequest $request)
     {
-        $image = $request->image->store('posts');
+        $image = $request->image;
         $post = Post::create([
             'title'=>$request->title,
             'description'=>$request->description,
@@ -89,7 +89,7 @@ class PostsController extends Controller
     {
         $data = $request->only(['title', 'description', 'event_date', 'content']);
         if($request->hasFile('image')){
-            $image = $request->image->store('posts');
+            $image = $request->image;
             $post->deleteImage();
             $data['image'] = $image;
         }

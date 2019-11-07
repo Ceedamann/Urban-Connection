@@ -34,12 +34,12 @@
                     </div>
                     @if(isset($post))
                         <div class="form-group">
-                            <img src="{{ asset('storage/'.$post->image)}}" alt="{{$post->title}}" style="width:100%">
+                            <img src="{{$post->image}}" alt="{{$post->title}}" style="width:100%">
                         </div>
                     @endif
                     <div class="form-group">
                         <label for="image">Image</label>
-                        <input type="file" class="form-control" name="image" id='image'>
+                        <input type="text" class="form-control" name="image" id='image'>
                     </div>
                     <div class="form-group">
                         <label for="category">Category</label>

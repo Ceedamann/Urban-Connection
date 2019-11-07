@@ -81,7 +81,7 @@
 
 
     <!-- Header -->
-    <header class="header text-white h-fullscreen pb-80" style="background-image: url({{asset('storage/'.$post->image)}});" data-overlay="9">
+    <header class="header text-white h-fullscreen pb-80" style="background-image: url({{$post->image}});" data-overlay="9">
       <div class="container text-center">
 
         <div class="row h-100">
@@ -126,7 +126,7 @@
           </div>
 
           <div class="text-center my-6">
-            <img class="rounded-md" src="{{asset('storage/'.$post->image)}}" alt="...">
+            <img class="rounded-md" src="{{$post->image}}" alt="...">
           </div>
 
 
@@ -196,7 +196,7 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="/">Urban ConnectionC</a>
+            <a href="/">Urban Connection</a>
           </div>
 
         </div>

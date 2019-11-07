@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @push('styles')
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
 @endpush
 @section('content')
 
@@ -9,14 +11,14 @@
             <div class="content">
                 <h1>Tag: {{$tag->name}}</h1>
             </div>
-            <a href="/posts">Post Event</a>
+            <a href="/posts">Create a Post</a>
         </div>
         <div class="events">
             <ul>
                 @foreach($posts as $post)
                 <li>
                 <div class="time">
-                    <a href="{{route('details.show', $post->id)}}"><img src="{{ asset('storage/'.$post->image)}}" alt=""></a>
+                    <a href="{{route('details.show', $post->id)}}"><img src="{{ $post->image}}" alt=""></a>
                     </div>
                     <div class="details">
                         <h3>{{$post->title}}</h3>
