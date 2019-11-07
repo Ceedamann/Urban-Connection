@@ -14,7 +14,6 @@
 @endforeach
 </div>
 
-{{-- @include('details.tag') --}}
 <section>
         <div class="leftBox">
             <div class="content">
@@ -25,8 +24,6 @@
             </div>
             <a href="/posts">Post Event</a>
         </div>
-            <a href="/posts">Post Event</a>
-    </div>
 
     <div class="events">
         <ul>
