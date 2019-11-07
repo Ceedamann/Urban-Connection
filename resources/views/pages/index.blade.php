@@ -43,13 +43,15 @@
                 </div>
             @endif
             <div class="content">
-                <div class="title m-b-md">
-                    Urban Connection
+                <div class="title m-b-md changes">
+                    <div class="">
+                        Urban Connection
+                    </div>
                 </div>
 
                 <div class="links">
-                    <a class='btn-link' href="/about">About us</a>                    
-                    <a class='btn-link' href="/events">Posts</a>                   
+                    <a class='btn-link' href="/about">About us</a>
+                    <a class='btn-link' href="/events">Posts</a>
                 </div>
             </div>
         </div>
