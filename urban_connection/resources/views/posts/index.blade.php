@@ -3,12 +3,12 @@
 <main class="py-4" style="color: black;">
         @auth
         <div class="container">
-        @if(session()->has('success'))
-            <div class="alert alert-success">
-                {{session()->get('success')}}
-             </div>
-        @endif
-        <div class="row">
+            @if(session()->has('success'))
+                <div class="alert alert-success">
+                    {{session()->get('success')}}
+                </div>
+            @endif
+            <div class="row mt-*1">
                 <div class="col-md-9">
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
@@ -65,12 +65,9 @@
                             <a href="{{route('posts.create')}}" class="btn btn-success">Add Post</a>
                         </div>
                     </div>
-
-
-
                 </div>
+            </div>
         </div>
-    </div>
         @else
            @yield('content1')
         @endauth
