@@ -5,12 +5,7 @@
 <main class="py-4" style="color: black;">
         @auth
         <div class="container">
-        @if(session()->has('success'))
-            <div class="alert alert-success">
-                {{session()->get('success')}}
-             </div>
-        @endif
-         <div class="row">         
+                <div class="row">         
             <div class="col-md-8">
 
                 <div class="card card-default">

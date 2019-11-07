@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @push('styles')
     <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
+    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -18,12 +20,12 @@
 <section>
         <div class="leftBox">
             <div class="content">
-                <h1>Events</h1>
+                <h1>Community</h1>
                 <p>
-                    There's nothing more important than keeping in touch with your community. Use this spot to checkout an upcoming event. Post a new event if you like and be sure to share it with a couple of friends.
+                    There's nothing more important than keeping in touch with your community. Use this spot to checkout an upcoming event, and business. Post a new event or business you would to like others to know about and be sure to share it with a couple of friends.
                 </p>
             </div>
-            <a href="/posts">Post Event</a>
+            <a href="/posts">Create a Post</a>
     </div>
 
     <div class="events">
@@ -31,7 +33,7 @@
             @foreach($posts as $post)
                 <li>
                 <div class="time">
-                        <a href="{{route('details.show', $post->id)}}"><img src="{{ asset('storage/'.$post->image)}}" alt=""></a>
+                        <a href="{{route('details.show', $post->id)}}"><img src="{{$post->image}}" alt=""></a>
                     </div>
                     <div class="details">
                         <h3>{{$post->title}}</h3>

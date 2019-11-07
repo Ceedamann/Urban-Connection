@@ -5,12 +5,7 @@
 <main class="py-4" style="color: black;">
         @auth
         <div class="container">
-        @if(session()->has('success'))
-            <div class="alert alert-success">
-                {{session()->get('success')}}
-             </div>
-        @endif
-        <div class="row">
+                <div class="row">
                 <div class="col-md-9">
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
@@ -27,7 +22,7 @@
                                     <tbody>
                                         @foreach($posts as $post)
                                             <tr>
-                                                <td><img src="{{ asset('storage/'.$post->image)}}" width="120px" height='120px' alt="{{$post->title}}"></td>
+                                                <td><img src="{{$post->image}}" width="120px" height='120px' alt="{{$post->title}}"></td>
                                                 <td>{{$post->title}}</td>
                                                 <td>
                                                 <a href="{{route('categories.edit', $post->category->id)}}">
