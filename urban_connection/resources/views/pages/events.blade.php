@@ -23,7 +23,7 @@
                     There's nothing more important than keeping in touch with your community. Use this spot to checkout an upcoming event. Post a new event if you like and be sure to share it with a couple of friends.
                 </p>
             </div>
-            <a href="/posts">Post Event</a>
+        <a href="/posts">Post Event</a>
     </div>
 
     <div class="events">
