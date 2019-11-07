@@ -196,7 +196,7 @@
         <div class="row gap-y align-items-center">
 
           <div class="col-6 col-lg-3">
-            <a href="/">Urban ConnectionC</a>
+            <a href="/">Urban Connection</a>
           </div>
 
         </div>
