@@ -24,8 +24,6 @@
                 </p>
             </div>
             <a href="/posts">Post Event</a>
-        </div>
-            <a href="/posts">Post Event</a>
     </div>
 
     <div class="events">
