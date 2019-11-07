@@ -10,7 +10,7 @@
                 {{session()->get('success')}}
              </div>
         @endif
-        <div class="row">            
+        <div class="row">
                 <div class="col-md-8">
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
