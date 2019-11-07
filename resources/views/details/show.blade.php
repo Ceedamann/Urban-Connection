@@ -81,7 +81,7 @@
 
 
     <!-- Header -->
-    <header class="header text-white h-fullscreen pb-80" style="background-image: url({{asset('storage/posts/'.$post->image)}});" data-overlay="9">
+    <header class="header text-white h-fullscreen pb-80" style="background-image: url({{asset('posts/'.$post->image)}});" data-overlay="9">
       <div class="container text-center">
 
         <div class="row h-100">
