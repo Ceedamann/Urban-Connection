@@ -199,6 +199,6 @@ footer {
     background-color: #363636;
     clear: both;
     position: absolute;
-    bottom: 0;
+    bottom: -48px;
     width: 100%;
 }
