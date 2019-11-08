@@ -29,7 +29,6 @@
         <div id="app">
             @include('inc.navbar')
             @yield('content')
-            {{-- @include('details.tag') --}}
         </div>
    </div>
 
