@@ -108,6 +108,7 @@ section .events ul li .time h2 {
 
 section .events ul li .time img {
     height: 150px;
+    width: 150px;
 }
 
 section .events ul li .details {
