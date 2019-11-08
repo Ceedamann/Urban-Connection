@@ -6,7 +6,7 @@
         @auth
         <div class="container">
                 <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-10">
                     <div class="card card-default">
                         <div class="card-header">Posts</div>
                             <div class="card-body">
