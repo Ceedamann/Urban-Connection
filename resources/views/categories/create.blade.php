@@ -1,7 +1,5 @@
 @extends('layouts.app1')
-
 @section('content')
-
 <div class="container mt-4" style="color: black;">
     <div class="row">
         <div class="col-md-8">

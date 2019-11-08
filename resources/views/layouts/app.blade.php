@@ -29,8 +29,8 @@
         <div id="app">
             @include('inc.navbar')
             @yield('content')
+            @include('inc.footer')
         </div>
-   </div>
 
     <!-- Scripts -->
     @yield('scripts')

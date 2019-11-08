@@ -184,20 +184,16 @@
 
         </div>
       </div>
-
-
-
     </main>
 
-
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="text-align:center; background-color: #363636;">
       <div class="container">
-        <div class="row gap-y align-items-center">
-
-          <div class="col-6 col-lg-3">
-            <a href="/">Urban Connection</a>
-          </div>
+        <div class="row gap-y">
+          <div">
+              <span class="text-muted"><a style="color:white;" href="/">Urban Connection</a></span>
+              <span class="text-muted" ><a style="color:white;" href="/about">@ Copyright 2019</a></span>
+          </div">
 
         </div>
       </div>
