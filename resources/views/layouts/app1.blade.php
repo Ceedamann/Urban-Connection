@@ -64,6 +64,7 @@
             @yield('content')
         @endauth
         </main>
+        {{-- @include('inc.footer') --}}
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
 @yield('scripts')

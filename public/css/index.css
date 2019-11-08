@@ -192,3 +192,13 @@ body {
     transition-property: transform;
     transition: 0.5s;
 }
+
+footer {
+    text-align: center;
+    line-height: 8px;
+    background-color: #363636;
+    clear: both;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
