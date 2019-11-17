@@ -21,7 +21,6 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 0.8125em;
-    letter-spacing: 2px;
     text-transform: uppercase;
     color: #191919;
     -webkit-transition: 0.3s ease-out;
@@ -163,4 +162,5 @@ body {
     }
 }
 
-/*# sourceMappingURL=style.css.map */
+
+# sourceMappingURL=style.css.map */

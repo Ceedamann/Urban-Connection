@@ -49,7 +49,7 @@
                     </div>
                 </div>
 
-                <div class="links">
+                <div class="links index-links">
                     <a class='btn-link' href="/about">About us</a>
                     <a class='btn-link' href="/events">Posts</a>
                 </div>
