@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+/*
 body {
     margin: 0;
     padding: 0;
@@ -152,7 +153,7 @@ section .events ul li .details a {
     padding: 0;
     font-size: 16px;
 }  */
-
+/*
 .leftBox a {
     display: inline-block;
     text-decoration: none;
@@ -174,5 +175,5 @@ section .events ul li .details a {
 section .events ul li .details a:hover {
     background: #e91e63;
     color: #fff;
-    border-color: #e91e63;
-}
+    border-color: #e91e63; */
+} */
