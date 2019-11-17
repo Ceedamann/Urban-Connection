@@ -200,7 +200,7 @@ footer {
     clear: both;
     position: absolute;
     bottom: -48px;
-    width: 100%;
+    width: 101%;
 }
 
 /* Events Page */
@@ -258,9 +258,9 @@ section .events {
 }
 
 section .events ul {
-    position: absolute;
+    /* position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     margin: 0;
     padding: 40px;
     box-sizing: border-box;
@@ -437,6 +437,7 @@ section .events ul li .details a:hover {
     section .events {
         background: none;
         width: 100%;
+        margin-top: 190px;
     }
 
     section .events ul li {
