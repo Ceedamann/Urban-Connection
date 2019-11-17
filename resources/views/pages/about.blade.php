@@ -7,7 +7,7 @@
 
 <div class="container">
   <div>
-    <div class="avatar">
+    <div class=" bio-card avatar">
       {{-- col-lg-3 col-md-6 col-sm-12 mb-lg-0 mb-5 --}}
       <span class="bounce_Img img-animation"><img src="https://avatars0.githubusercontent.com/u/51130585?s=460&v=4"
           height="250px" width="250px" class="z-depth-1" alt="sidHicks"></span>
@@ -35,7 +35,7 @@
 
       <!-- Grid column -->
 
-    <div class="avatar1">
+    <div class="bio-card avatar1">
 
         <span class="bounce_Img img-animation"><img src="https://avatars0.githubusercontent.com/u/53629644?s=400&v=4" height="250px" width="250px"
           class="z-depth-1" alt="Carl Robinson"></span>

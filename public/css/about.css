@@ -10,22 +10,22 @@ body {
     /* text-align: -webkit-center; */
 }
 
-.avatar {
-    float: left;
-    /* margin: 130px; */
+.bio-card {
     border: solid 1px #fff;
     width: 40%;
+    margin-top: 50px;
+
+}
+
+.avatar {
+    float: left;
 }
 
 .avatar1 {
     float: right;
-    /* margin: 130px; */
-    border: solid 1px #fff;
-    width: 40%;
 }
 
-.avatar span img,
-.avatar1 span img {
+.bio-card span img {
     animation-name: bio-pic;
     animation-duration: 7s;
     animation-fill-mode: forwards;
