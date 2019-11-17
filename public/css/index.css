@@ -219,13 +219,26 @@ footer {
 
 /* Small tablets to big tablets: from 768px - 1023px*/
 @media only screen and (max-width: 1023px) {
+
+    html, body {
+        font-size:10px;
+    }
+
+
     .title {
         font-size: 50px;
+    }
+
+    .full-card {
+        margin-top: 70px;
+        font-size: 15px;
     }
 
     .index-links {
         margin-top: 50px;
     }
+
+
 }
 
 
