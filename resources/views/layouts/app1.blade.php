@@ -44,10 +44,11 @@
                             <a href="{{route('tags.index')}}">Tags</a>
                         </li>
                         <li class="list-group-item">
-                            <a href="{{route('tags.index')}}">User</a>
-                        </li>
-                        <li class="list-group-item">
                             <a href="{{route('posts.index')}}">Posts</a>
+                        </li>
+                        @if(auth()->user()->isAdmin())
+                        <li class="list-group-item">
+                            <a href="{{route('users.index')}}">Users</a>
                         </li>
                     </ul>
                     <ul class="list-group mt-5">
@@ -55,6 +56,7 @@
                             <a href="{{route('trashed-posts.index')}}">Trashed posts</a>
                         </li>
                     </ul>
+                        @endif
                  </div>
                 <div class="col-md-8">
                     @yield('content')
