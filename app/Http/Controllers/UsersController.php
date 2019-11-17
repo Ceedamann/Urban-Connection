@@ -13,7 +13,7 @@ class UsersController extends Controller
     $user->role = 'admin';
     $user->save();
     session()->flash('success', 'User is now Admin.');
-    return redirect(route("user.index"));
+    return redirect(route("users.index"));
 
    }
 
