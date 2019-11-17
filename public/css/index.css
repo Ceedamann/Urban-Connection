@@ -219,34 +219,13 @@ footer {
 
 /* Small tablets to big tablets: from 768px - 1023px*/
 @media only screen and (max-width: 1023px) {
-    body { font-size: 18px; }
-
-    section { padding: 60px 0; }
-
-    .long-copy {
-        line-height: 145%;
-        width: 80%;
-        margin-left: 10%;
+    .title {
+        font-size: 50px;
     }
 
-    .steps-box { margin-top: 10px; }
-    .steps-box:last-child { margin-top: 10px; }
-    .works-steps { margin-bottom: 40px; }
-    .works-steps:last-of-type { margin-bottom: 60px; }
-
-    .app-screen { width: 50%; }
-
-    .icon-small { width: 20px; }
-    .city-feature { font-size: 90%; }
-
-    .plan-box {
-        width: 100%;
-        margin-left: 0%;
+    .index-links {
+        margin-top: 50px;
     }
-
-    .plan-price { font-size: 250%; }
-
-    .contact-form { width: 80%; }
 }
 
 
@@ -261,7 +240,7 @@ footer {
     }
 
     .index-links {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
 }
