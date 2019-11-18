@@ -306,8 +306,8 @@ section .events ul li .time h2 {
 }
 
 section .events ul li .time img {
-    height: 150px;
-    width: 150px;
+    height: 160px;
+    width: 215px;
 }
 
 section .events ul li .details {
@@ -367,6 +367,11 @@ section .events ul li .details a:hover {
     background: #e91e63;
     color: #fff;
     border-color: #e91e63;
+}
+
+img#post-image {
+    width: 150px;
+    height: 120px;
 }
 
 
@@ -441,12 +446,21 @@ section .events ul li .details a:hover {
     }
 
     section .events ul li {
-        height: 70px;
+        height: 90px;
         width: 100%;
     }
 
     section .leftBox .content h1 {
         font-size: 35px;
+    }
+
+    section .events ul li .time {
+        padding: 5px;
+    }
+
+    section .events ul li .time img {
+        height: 78px;
+        width: 95px;
     }
 
     section .events ul {
@@ -473,6 +487,11 @@ section .events ul li .details a:hover {
 
     section .events ul li .details {
         padding: 5px;
+    }
+
+    #post-image {
+        width: 85px;
+        height: 70px;
     }
 
 }
