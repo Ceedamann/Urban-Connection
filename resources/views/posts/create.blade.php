@@ -2,16 +2,9 @@
 
 @section('content')
 
-<main class="py-4">
-    @auth
-    <div class="container">
-        @if(session()->has('success'))
-            <div class="alert alert-success">
-                {{session()->get('success')}}
-            </div>
-        @endif
-        <div class="row">
-            <div class="col-md-4">
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-2">
                 <ul class="list-group">
                     <li class="list-group-item">
                         <a href="{{route('categories.index')}}">Categories</a>
@@ -34,20 +27,7 @@
                 </ul>
                     @endif
             </div>
-            <div class="col-md-8">
-                @yield('content')
-            </div>
-        </div>
-    </div>
-    @else
-        @yield('content')
-    @endauth
-</main>
-
-
-<div class="container mt-1" style="color: black;">
-    <div class="row">
-        <div class="card card-default">
+        <div class="card col-md-10 card-default">
             <div class="card-header">
                 Create Post
             </div>
