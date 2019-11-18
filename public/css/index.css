@@ -5,6 +5,7 @@
     -webkit-box-sizing: border-box;
 }
 
+
 html,
 body {
     background-color: #fff;
@@ -16,6 +17,40 @@ body {
     overflow-x: hidden;
     color: #555;
 }
+
+/* About Me */
+
+.avatar {
+    color: #fff;
+    float: left;
+    margin: 130px;
+    border: solid 1px #fff;
+}
+
+.avatar span img {
+    animation-name: bio-pic;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bio-pic {
+    0% {
+        border-radius: 0;
+    }
+    33% {
+        border-radius: 50%;
+    }
+    50% {
+        border-radius: 100%;
+    }
+    33% {
+        border-radius: 50%;
+    }
+    100% {
+        border-radius: 0%;
+    }
+}
+
 
 .clearfix {
     zoom: 1;
@@ -415,7 +450,8 @@ img#post-image {
     }
 
     section {
-        padding 0;
+        padding: 0;
+        height: 65vh;
     }
 
     section .leftBox {
@@ -444,6 +480,13 @@ img#post-image {
         width: 100%;
         margin-top: 190px;
     }
+
+    /* section .events {
+        background: none;
+        width: 100%;
+        margin-top: 170px;
+        height: 20vh;
+    } */
 
     section .events ul li {
         height: 90px;

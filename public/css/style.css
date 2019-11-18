@@ -17,7 +17,7 @@ body {
         url("https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ");
 }
 
-.block-number {
+/* .block-number {
     text-align: center;
     font-weight: bold;
     font-size: 0.8125em;
@@ -55,6 +55,7 @@ body {
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
 }
+
 .demo-topbar .main-content .topbar,
 .demo-navbar .main-content .navbar {
     position: static;
@@ -161,81 +162,6 @@ body {
     body > .footer .nav a:last-child {
         display: none;
     }
-}
-
-/* Media Queries */
-
-/* Big tablets to 1200px (widths smaller than the 1140px row)*/
-@media only screen and (max-width: 1200px) {
-    .hero-text-box {
-        position: absolute;
-        width: 100%;
-        padding: 0 2%;
-    }
-
-    .row { padding: 0 2%; }
-
-}
-
-/* Small tablets to big tablets: from 768px - 1023px*/
-@media only screen and (max-width: 1023px) {
-
-    body {
-        font-family: "Nunito", sans-serif;
-        font-weight: 200;
-        margin: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        text-align: center;
-        height: 110vh;
-        /* height: 100%; */
-        background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
-            url("https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ");
-    }
-
-
-}
-
-
-
-
-/* Small phones to small tablets: from 481px - 767px */
-@media only screen and (max-width: 767px) {
-
-
-    .title {
-        font-size: 50px;
-    }
-
-    .index-links {
-        margin-top: 50px;
-    }
-
-}
-
-
-/* Small phones: from 0 - 480px */
-@media only screen and (max-width: 480px) {
-
-    section {padding: 25px 0; }
-    .contact-form {width: 100%; }
-
-}
-
-
-body {
-    font-family: "Nunito", sans-serif;
-    font-weight: 200;
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    height: 110vh;
-    /* height: 100%; */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
-        url("https://www.filepicker.io/api/file/Av2s02aiQ5KSa2huDXlJ");
-}
+} */
 
 /*# sourceMappingURL=style.css.map */

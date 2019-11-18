@@ -18,6 +18,10 @@
 
 {{-- @include('details.tag') --}}
 <section>
+
+    <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
+    url('https://ak0.picdn.net/shutterstock/videos/1025207180/thumb/4.jpg');">
+
         <div class="leftBox">
             <div class="content">
                 <h1>Community</h1>
@@ -28,25 +32,28 @@
             <a href="/posts">Create a Post</a>
     </div>
 
-    <div class="events">
-        <ul>
-            @foreach($posts as $post)
-                <li>
-                <div class="time">
-                        <a href="{{route('details.show', $post->id)}}"><img src="{{$post->image}}" alt=""></a>
-                    </div>
-                    <div class="details">
-                        <h3>{{$post->title}}</h3>
-                        <p>
-                            {{$post->description}}
-                        <br/>
-                            {{$post->event_date}}
-                        <p/>
-                        <a href="{{route('details.show', $post->id)}}">View Details</a>
-                    </div>
-                </li>
+        <div class="events">
+            <ul>
+                @foreach($posts as $post)
+                    <li>
+                    <div class="time">
+                            <a href="{{route('details.show', $post->id)}}"><img src="{{$post->image}}" alt=""></a>
+                        </div>
+                        <div class="details">
+                            <h3>{{$post->title}}</h3>
+                            <p>
+                                {{$post->description}}
+                            <br/>
+                                {{$post->event_date}}
+                            <p/>
+                            <a href="{{route('details.show', $post->id)}}">View Details</a>
+                        </div>
+                    </li>
                 @endforeach
             </ul>
         </div>
+
+    </div>
+
     </section>
 @endsection

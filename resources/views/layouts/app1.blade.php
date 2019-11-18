@@ -26,50 +26,10 @@
     <body>
         <div id="app">
             @include('inc.navbar')
-        <main class="py-4">
-            @auth
-            <div class="container">
-            @if(session()->has('success'))
-                <div class="alert alert-success">
-                    {{session()->get('success')}}
-                 </div>
-            @endif
-            <div class="row">
-                <div class="col-md-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="{{route('categories.index')}}">Categories</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="{{route('tags.index')}}">Tags</a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="{{route('posts.index')}}">Posts</a>
-                        </li>
-                        @if(auth()->user()->isAdmin())
-                        <li class="list-group-item">
-                            <a href="{{route('users.index')}}">Users</a>
-                        </li>
-                    </ul>
-                    <ul class="list-group mt-5">
-                        <li class="list-group-item">
-                            <a href="{{route('trashed-posts.index')}}">Trashed posts</a>
-                        </li>
-                    </ul>
-                        @endif
-                 </div>
-                <div class="col-md-8">
-                    @yield('content')
-                </div>
-            </div>
+                @yield('content')
+            @include('inc.footer')
         </div>
-        @else
-            @yield('content')
-        @endauth
-        </main>
-        @include('inc.footer')
-    </div>
     <script src="{{ asset('js/app.js') }}"></script>
-@yield('scripts')
+    @yield('scripts')
 </body>
 </html>
