@@ -13,8 +13,6 @@
 <a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
 @endforeach
 </div>
-
-{{-- @include('details.tag') --}}
 <section>
 
     <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),

@@ -1,12 +1,16 @@
 @extends('layouts.app')
 @push('styles')
-    <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/events.css') }}" rel="stylesheet">
+    <link href="{{asset('css/page.min.css')}}" rel="stylesheet"> --}}
+    <link href="{{asset('css/index.css')}}" rel="stylesheet">
 @endpush
 @section('content')
 
     <section>
+
+        <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
+        url('https://ak0.picdn.net/shutterstock/videos/1025207180/thumb/4.jpg');">
+
         <div class="leftBox">
             <div class="content">
                 <h1>Tag: {{$tag->name}}</h1>
