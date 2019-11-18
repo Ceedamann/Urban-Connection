@@ -113,6 +113,27 @@ body {
     border-color: #e91e63;
 }
 
+.tags-cats {
+    background: rgba(0, 0, 0);
+}
+
+.tags-cats a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #262626;
+    font-size: 18px;
+    transition: 0.5s;
+    color: white;
+    background: rgba(0, 0, 0);
+}
+
+.tags-cats a:hover {
+    background-color: #e91e63;
+    color: #fff;
+    border-color: #e91e63;
+}
+
 .flex-center {
     align-items: center;
     display: flex;
@@ -309,7 +330,7 @@ section .leftBox .content p {
 section .events {
     position: relative;
     width: 50%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.5);
     float: right;
     box-sizing: border-box;
@@ -330,7 +351,7 @@ section .events ul li {
     box-sizing: border-box;
     height: 200px;
     margin: 15px auto;
-    width: 850px;
+    width: 100%;
     border: 1px solid grey;
     box-shadow: 6px 6px 6px grey;
 }
@@ -445,12 +466,21 @@ img#post-image {
 
     html, body {
         font-size:10px;
+        height: 105vh;
+        width: 100%;
     }
 
     .tags a {
         font-size: 8px;
     }
 
+    .tags-cats a {
+        font-size: 8px;
+    }
+
+    .tags-cats {
+        bottom: 5px;
+    }
 
     .title {
         font-size: 50px;
@@ -467,7 +497,7 @@ img#post-image {
 
     section {
         padding: 0;
-        height: 65vh;
+        height: 100vh;
     }
 
     section .leftBox {
@@ -497,10 +527,6 @@ img#post-image {
         margin-top: 190px;
     }
 
-    .avatar {
-        margin: 0px;
-    }
-
     section .events ul li {
         height: 90px;
         width: 100%;
@@ -521,8 +547,8 @@ img#post-image {
 
     section .events ul {
         padding: 10px;
-        top: 50%;
         width: 100%;
+        margin-top: -185px;
     }
 
     section .events ul li .details h3 {
@@ -565,7 +591,7 @@ img#post-image {
         height: 210px;
         width: 220px;
         box-shadow: 2px 2px 5px 2px whitesmoke;
-}
+
     }
 
     .avatar {
@@ -574,6 +600,12 @@ img#post-image {
 
     .avatar1 {
         float: none;
+    }
+
+    footer {
+        width: 105%;
+        width: -47px;
+
     }
 
 }

@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @push('styles')
-    <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+    <link href="{{asset('css/index.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -15,8 +13,6 @@
 <a class='badge badge-secondary' href="{{route('details.tag', $tag->id)}}">{{$tag->name}}</a>
 @endforeach
 </div>
-
-{{-- @include('details.tag') --}}
 <section>
 
     <div style="background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.699)),
