@@ -445,6 +445,7 @@ img#post-image {
 
     html, body {
         font-size:10px;
+        height: 105vh;;
     }
 
     .tags a {
@@ -467,7 +468,7 @@ img#post-image {
 
     section {
         padding: 0;
-        height: 65vh;
+        height: 100vh;
     }
 
     section .leftBox {
@@ -497,10 +498,6 @@ img#post-image {
         margin-top: 190px;
     }
 
-    .avatar {
-        margin: 0px;
-    }
-
     section .events ul li {
         height: 90px;
         width: 100%;
@@ -521,7 +518,6 @@ img#post-image {
 
     section .events ul {
         padding: 10px;
-        top: 50%;
         width: 100%;
     }
 
@@ -565,7 +561,7 @@ img#post-image {
         height: 210px;
         width: 220px;
         box-shadow: 2px 2px 5px 2px whitesmoke;
-}
+
     }
 
     .avatar {
@@ -574,6 +570,10 @@ img#post-image {
 
     .avatar1 {
         float: none;
+    }
+
+    footer {
+        width: 105%;
     }
 
 }

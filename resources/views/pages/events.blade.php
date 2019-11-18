@@ -1,8 +1,6 @@
 @extends('layouts.app')
 @push('styles')
-    <link href="{{ asset('css/events.css') }}" rel="stylesheet">
-    <link href="{{asset('css/page.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+    <link href="{{asset('css/index.css')}}" rel="stylesheet">
 @endpush
 
 @section('content')
