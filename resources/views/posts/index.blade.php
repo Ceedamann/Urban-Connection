@@ -23,7 +23,7 @@
                                     <tbody>
                                         @foreach($posts as $post)
                                             <tr>
-                                                <td><img src="{{$post->image}}" width="120px" height='120px' alt="{{$post->title}}"></td>
+                                                <td><img id="post-image"src="{{$post->image}}" alt="{{$post->title}}"></td>
                                                 <td>{{$post->title}}</td>
                                                 <td>
                                                 <a href="{{route('categories.edit', $post->category->id)}}">
