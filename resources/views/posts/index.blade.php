@@ -37,7 +37,6 @@
                     <div class="">
                         @yield('content')
                     </div>
-
         @else
             @yield('content')
         @endauth
