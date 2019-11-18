@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0px;
     padding: 0px;
 }
@@ -12,10 +12,10 @@ body {
     margin: 0;
     color: white;
     background-color: rgb(150, 150, 150);
-    /* text-align: -webkit-center; */
-}
+} */
 
-.avatar {
+/* .avatar {
+    color: #fff;
     float: left;
     margin: 130px;
     border: solid 1px #fff;
@@ -25,7 +25,6 @@ body {
     animation-name: bio-pic;
     animation-duration: 7s;
     animation-fill-mode: forwards;
-    /* animation-timing-function: ease-in; */
 }
 
 @keyframes bio-pic {
@@ -41,10 +40,9 @@ body {
     33% {
         border-radius: 50%;
     }
-    }
     100% {
         border-radius: 0%;
     }
-}
+} */
 
 
