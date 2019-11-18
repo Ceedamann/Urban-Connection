@@ -20,17 +20,40 @@ body {
 
 /* About Me */
 
-.avatar {
-    color: #fff;
-    float: left;
-    margin: 130px;
+
+.bio-card {
     border: solid 1px #fff;
+    width: 40%;
+    margin: 50px auto;
+    color: white;
+    box-shadow: 2px 2px 5px 2px whitesmoke;
+
 }
 
-.avatar span img {
+.bio-card img {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 2px 2px 5px 2px whitesmoke;
+}
+
+.avatar {
+    float: left;
+}
+
+.avatar1 {
+    float: right;
+}
+
+.bio-card span img {
     animation-name: bio-pic;
     animation-duration: 7s;
     animation-fill-mode: forwards;
+
+}
+
+.titleBio {
+    margin-top: 5px;
 }
 
 @keyframes bio-pic {
@@ -414,13 +437,6 @@ img#post-image {
 
 /* Big tablets to 1200px (widths smaller than the 1140px row)*/
 @media only screen and (max-width: 1200px) {
-    .hero-text-box {
-        position: absolute;
-        width: 100%;
-        padding: 0 2%;
-    }
-
-    .row { padding: 0 2%; }
 
 }
 
@@ -481,12 +497,9 @@ img#post-image {
         margin-top: 190px;
     }
 
-    /* section .events {
-        background: none;
-        width: 100%;
-        margin-top: 170px;
-        height: 20vh;
-    } */
+    .avatar {
+        margin: 0px;
+    }
 
     section .events ul li {
         height: 90px;
@@ -535,6 +548,32 @@ img#post-image {
     #post-image {
         width: 85px;
         height: 70px;
+    }
+
+    .titleBio {
+        margin-top: 5px;
+    }
+
+    .bio-card {
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 2px 2px 5px 2px whitesmoke;
+    }
+
+    .bio-card img {
+        margin-top: 15px;
+        height: 210px;
+        width: 220px;
+        box-shadow: 2px 2px 5px 2px whitesmoke;
+}
+    }
+
+    .avatar {
+        float: none;
+    }
+
+    .avatar1 {
+        float: none;
     }
 
 }

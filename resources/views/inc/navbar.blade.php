@@ -10,18 +10,12 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left Side Of Navbar -->
 
+            <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link" href="/markets">Markets</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/business">Business</a>
-                </li> --}}
                 <li class="nav-item">
                     <a class="nav-link" href="/events">Posts</a>
                 </li>
