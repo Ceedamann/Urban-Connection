@@ -33,7 +33,7 @@
             </ul>
         </div>
     </section>
-    <div class="tags">
+    <div class="tags-cat">
         @foreach($categories as $category)
         <a class='badge badge-secondary' href="{{route('details.category', $category->id)}}">{{$category->name}}</a>
         @endforeach||
