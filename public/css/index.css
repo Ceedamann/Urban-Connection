@@ -113,11 +113,14 @@ body {
     border-color: #e91e63;
 }
 
-.tags-cats {
+.tags-cat {
     background: rgba(0, 0, 0);
+    position: relative;
+    bottom: 40px;
+
 }
 
-.tags-cats a {
+.tags-cat a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
@@ -128,7 +131,7 @@ body {
     background: rgba(0, 0, 0);
 }
 
-.tags-cats a:hover {
+.tags-cat a:hover {
     background-color: #e91e63;
     color: #fff;
     border-color: #e91e63;
@@ -270,16 +273,6 @@ body {
     text-decoration: none;
     transition-property: transform;
     transition: 0.5s;
-}
-
-footer {
-    text-align: center;
-    line-height: 8px;
-    background-color: #363636;
-    clear: both;
-    position: absolute;
-    bottom: -48px;
-    width: 101%;
 }
 
 /* Events Page */
@@ -453,6 +446,25 @@ img#post-image {
     height: 120px;
 }
 
+.footers {
+    background: #303036;
+    color: #d3d3d3;
+    height: 40px;
+    text-align: center;
+    /* z-index: 99; */
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footers a {
+    color: #d3d3d3;
+    font-size: 16px;
+    text-align: center;
+}
+
+
 
 /* Media Queries */
 
@@ -474,12 +486,22 @@ img#post-image {
         font-size: 8px;
     }
 
-    .tags-cats a {
+    .tags-cat a {
         font-size: 8px;
     }
 
-    .tags-cats {
+    .tags-cat {
         bottom: 5px;
+    }
+
+    .footers {
+        height: 25px;
+        bottom: -65px;
+        line-height: 25px;
+    }
+    .footers a {
+        bottom: 10px;
+        font-size:10px;
     }
 
     .title {
@@ -525,6 +547,7 @@ img#post-image {
         background: none;
         width: 100%;
         margin-top: 190px;
+        height: 0;
     }
 
     section .events ul li {
@@ -601,13 +624,6 @@ img#post-image {
     .avatar1 {
         float: none;
     }
-
-    footer {
-        width: 105%;
-        width: -47px;
-
-    }
-
 }
 
 
