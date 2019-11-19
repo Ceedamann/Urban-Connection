@@ -480,6 +480,7 @@ img#post-image {
         font-size:10px;
         height: 105vh;
         width: 100%;
+        overflow-x: hidden;
     }
 
     .tags a {
