@@ -1,4 +1,41 @@
+# Urban Connection
+
+## Urban Connection is a social media app that connects urban businesses with their communities
+
+### Below is a link to the program demonstration of how Urban Connection Works!
+
+## [Urban Connection Demo](https://drive.google.com/file/d/1gurTfbhATSeVpP_2i_NsozQ3M3KZhKO8/view)
+
+*Urban Connection is built using the PHP and the Laravel Framwork
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+
+
+![Spotify](assets/spotify-this.gif)
+
+LIRI will search OMDB for movie titles and information by typing
+* movie-this
+* movie-name
+
+![Spotify](assets/movie-this.gif)
+
+LIRI will search concert location, date and time using Bands In Town API by typing
+* concert-this
+* artist-name
+
+![Spotify](assets/concert-this.gif)
+
+LIRI will also read and execute commands in a separate text file by typing
+* do-what-it-says
+
+![Spotify](assets/do-what-it-says.gif)
+![Spotify](assets/do-what-it-says2.gif)
+
+### Bonus
+* In Addition, LIRI will log your searched to a text file.
+
+
+
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
